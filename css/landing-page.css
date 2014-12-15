@@ -110,7 +110,7 @@ h6 {
 }
 
 .banner {
-    padding: 100px 0;
+    padding: 50px 0;
     color: #f8f8f8;
     background-color:  #388E3C;
     background-size: cover;
@@ -324,4 +324,10 @@ form.login a:hover
 .team-member {
 margin-bottom: 50px;
 text-align: center;
+}
+
+.circle-small
+{
+    width: 100px;
+    height: 100px;
 }

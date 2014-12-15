@@ -32,6 +32,7 @@
 
 <body>
 
+<a id="top"></a>
     <!-- Navigation -->
    
     <!-- Header -->
@@ -46,7 +47,7 @@
                         <h1>FarmaApp</h1>
                         <h3>App de receta virtual para Canarias</h3>
                         <hr class="intro-divider"> 
-                        <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</button>
+                        <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Inicio de sesion/Registro</button>
     
                     </div>
                 </div>
@@ -62,7 +63,7 @@
 
         <div class="container">
 
-            <div class="row">
+            <div id = "about" class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
@@ -94,28 +95,28 @@
                           <div class="row">
                               <div class="col-sm-3">
                                   <div class="team-member">
-                                      <img src="http://lorempixel.com/200/200/people" class="img-responsive img-circle center-block" alt="">
+                                      <img src="http://lorempixel.com/200/200/people" class="img-responsive img-circle center-block circle-small" alt="">
                                       <h4>Eduardo Brito</h4>
                                       <p class="text">Algo</p>
                                   </div>
                               </div>
                               <div class="col-sm-3">
                                   <div class="team-member">
-                                      <img src="http://lorempixel.com/200/200/people" class="img-responsive img-circle center-block" alt="">
+                                      <img src="http://lorempixel.com/200/200/people" class="img-responsive img-circle center-block circle-small" alt="">
                                       <h4>Monica Rabassa</h4>
                                       <p class="text">Algo</p>
                                   </div>
                               </div>
                               <div class="col-sm-3">
                                   <div class="team-member">
-                                      <img src="http://lorempixel.com/200/200/people" class="img-responsive img-circle center-block" alt="">
+                                      <img src="http://lorempixel.com/200/200/people" class="img-responsive img-circle center-block circle-small" alt="">
                                       <h4>Emmanuel Rivero</h4>
                                       <p class="text">Algo</p>
                                   </div>
                               </div>
                               <div class="col-sm-3">
                                   <div class="team-member">
-                                      <img src="http://lorempixel.com/200/200/people" class="img-responsive img-circle center-block" alt="">
+                                      <img src="http://lorempixel.com/200/200/people" class="img-responsive img-circle center-block circle-small" alt="">
                                       <h4>Nea Melian</h4>
                                       <p class="text">Algo</p>
                                   </div>
@@ -123,7 +124,7 @@
                           </div>
                           <div class="row">
                               <div class="col-lg-8 col-lg-offset-2 text-center">
-                                  <p class="large text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                                  <p class="large text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, Nombre de usuario ut unde.</p>
                               </div>
                           </div>
                       </div>
@@ -139,28 +140,25 @@
     <!-- /.banner -->
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
+    <footer id="footer">
+        <div class="container" style="padding-top: 5px">
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="list-inline">
+                    <ul class="list-inline ">
                         <li>
-                            <a href="#home">Home</a>
+
+                            <a class = "scroll" href="#top">Home</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a class = "scroll"  href="#about">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
+                            <a class = "scroll"  href="#contact">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; ReceVirtual S.L. 2014.</p>
                 </div>
             </div>
         </div>
@@ -179,39 +177,39 @@
         <br>
         <div class="bs-example bs-example-tabs">
             <ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+              <li class="active"><a href="#signin" data-toggle="tab">Iniciar sesion</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Registrarse</a></li>
             </ul>
         </div>
       <div class="modal-body">
         <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade active in" id="signin">
-            <form class="form-horizontal" method ="POST">
+            <form class="form-horizontal" method ="POST" action="index.html">
             <fieldset>
             <!-- Sign In Form -->
             <!-- Text input-->
             <div class="control-group">
-              <label class="control-label" for="userid">Alias:</label>
+              <label class="control-label" for="userid">Nombre de usuario:</label>
               <div class="controls">
-                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Usuario" class="input-medium" required="">
               </div>
             </div>
 
             <!-- Password input-->
             <div class="control-group">
-              <label class="control-label" for="passwordinput">Password:</label>
+              <label class="control-label" for="passwordinput">Contrasena:</label>
               <div class="controls">
-                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="Contrasena" class="input-medium">
               </div>
             </div>
 
             <!-- Multiple Checkboxes (inline) -->
             <div class="control-group">
-              <label class="control-label" for="rememberme"></label>
+              <label class="control-label" for="rememberme" ></label>
               <div class="controls">
-                <label class="checkbox inline" for="rememberme-0">
-                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
-                  Remember me
+                <label class="checkbox inline" for="rememberme-0" >
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me"  >
+                      Recuerdame
                 </label>
               </div>
             </div>
@@ -220,7 +218,7 @@
             <div class="control-group">
               <label class="control-label" for="signin"></label>
               <div class="controls">
-                <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+                <button id="signin" name="signin" class="btn btn-success" href="index.html">Iniciar sesion</button>
               </div>
             </div>
             </fieldset>
@@ -234,44 +232,44 @@
             <div class="control-group">
               <label class="control-label" for="Email">Email:</label>
               <div class="controls">
-                <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+                <input id="Email" name="Email" class="form-control" type="text" placeholder="usuario@gmail.com" class="input-large" required="">
               </div>
             </div>
             
             <!-- Text input-->
             <div class="control-group">
-              <label class="control-label" for="userid">Alias:</label>
+              <label class="control-label" for="userid">Nombre de usuario:</label>
               <div class="controls">
-                <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="Usuario" class="input-large" required="">
               </div>
             </div>
             
             <!-- Password input-->
             <div class="control-group">
-              <label class="control-label" for="password">Password:</label>
+              <label class="control-label" for="password">Contrasena:</label>
               <div class="controls">
-                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
-                <em>1-8 Characters</em>
+                <input id="password" name="password" class="form-control" type="password" placeholder="Contrasena" class="input-large" required="">
+                <em>1-8 caracteres</em>
               </div>
             </div>
             
             <!-- Text input-->
             <div class="control-group">
-              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              <label class="control-label" for="reenterpassword">Reintroducir contrasena:</label>
               <div class="controls">
-                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="Contrasena" class="input-large" required="">
               </div>
             </div>
             
             <!-- Multiple Radios (inline) -->
             <br>
             <div class="control-group">
-              <label class="control-label" for="humancheck">Humanity Check:</label>
+              <label class="control-label" for="humancheck">Revision de humanidad:</label>
               <div class="controls">
                 <label class="radio inline" for="humancheck-0">
-                  <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
+                  <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">Soy un robot</label>
                 <label class="radio inline" for="humancheck-1">
-                  <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+                  <input type="radio" name="humancheck" id="humancheck-1" value="human">Soy humano</label>
               </div>
             </div>
             
@@ -279,7 +277,7 @@
             <div class="control-group">
               <label class="control-label" for="confirmsignup"></label>
               <div class="controls">
-                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-success" href="index.html">Registrarse</button>
               </div>
             </div>
             </fieldset>
@@ -289,15 +287,35 @@
       </div>
       <div class="modal-footer">
       <center>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         </center>
       </div>
     </div>
   </div>
 </div>
 
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    } );
+  } );
+</script>
+
 </body>
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+    <script src="js/farmaapp.js"></script>
 
 </html>
 
