@@ -1,10 +1,10 @@
 # FarmaApp
 
-## Diseno de la pagina web de FarmaApp
+## Simple Bootstrap HTML website for Pharmaceutical project
 
-Se disena con Bootstrap, HTML5, CSS y JavaScript.
+Made using Bootstrap and some Javascript.
 
-## Creador
+## Creators
 
 Eduardo Brito Sanchez
 Emmanuel Rivero Arbelo
